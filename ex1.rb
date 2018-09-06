@@ -7,14 +7,13 @@ my_dramedy="Life is beautiful"
 
 # Question time
 puts "Do you enjoy documentaries? (yes/no)"
-  if gets.chomp == "yes"? user_likes_docs = true: user_likes_docs = false
-  end
+gets.chomp == "yes"? user_likes_docs = true: user_likes_docs = false
+
 puts "Do you enjoy dramas? (yes/no)"
-  if gets.chomp == "yes"? user_likes_dramas = true: user_likes_dramas = false
-  end
+gets.chomp == "yes"? user_likes_dramas = true: user_likes_dramas = false
+
 puts "Do you enjoy comedies? (yes/no)"
-  if gets.chomp == "yes"? user_likes_comedies = true: user_likes_comedies = false
-  end
+gets.chomp == "yes"? user_likes_comedies = true: user_likes_comedies = false
 
 # debugging
  # puts user_likes_docs
@@ -30,6 +29,6 @@ elsif user_likes_dramas
   puts "Maybe you would like to watch #{my_drama}?"
 elsif user_likes_comedies
   puts "Would you prefer to watch #{my_comedy}?"
-elsif not (user_likes_docs) && (not user_likes_dramas) && (not user_likes_comedies)
+elsif not(user_likes_docs) && not(user_likes_dramas) && not(user_likes_comedies)
   puts "Not into movies? How about a book? The Name of the Rose by Umberto Eco, for instance?"
 end
